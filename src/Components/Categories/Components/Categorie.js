@@ -1,5 +1,6 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
+import JokeItem from './Joke';
 import ChuckNorrisApi from '../../../Services/ChuckNorrisApi';
 
 export default function Categorie({Categorie}) {
@@ -17,11 +18,12 @@ export default function Categorie({Categorie}) {
 	return (
 		<li>
 			<h2 onClick={getJokeByCategorie}>{Categorie}</h2>
-			{Joke.id ?
-				<div >
-					{Joke.value}
+			{IsLoading ? <div>Carregando ...</div> : null}
+			{Joke && Joke.id ?
+				<>
+					<JokeItem key={Joke.id} Joke={Joke} />
 					<button onClick={getJokeByCategorie}>Carregar outra</button>
-				</div>
+				</>
 				: null
 			}
 		</li>

@@ -18,7 +18,7 @@ export default function Categories() {
 			dispatch(addCategories({Categories: result}));
 		}
 		getAllCategories();
-	}, []); //eslint-disable-line
+	}, [dispatch]);
 
 	return (
 		<ul>
