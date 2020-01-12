@@ -1,12 +1,11 @@
 import React, {useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import Categorie from './Components/Categorie';
+import Category from './Components/Category';
 import ChuckNorrisApi from '../../Services/ChuckNorrisApi';
+import CategoriesActions from '../../Store/CategoriesActions';
 
-function addCategories({ Categories }) {
-	return {type: 'ADD_CATEGORIES', Categories}
-}
+
 
 export default function Categories() {
 	const Categories = useSelector(state => state.Categories.Data);
@@ -15,16 +14,18 @@ export default function Categories() {
 	useEffect(() => {
 		async function getAllCategories() {
 			const result = await ChuckNorrisApi.getAllCategories();
-			dispatch(addCategories({Categories: result}));
+			dispatch(CategoriesActions.addCategories({Categories: result}));
 		}
+		
+		if (Categories && Categories.length > 0) return;
 		getAllCategories();
-	}, [dispatch]);
+	}, [Categories, dispatch]);
 
 	return (
 		<ul>
 			{Categories.map(
-				CategorieItem =>
-					<Categorie key={CategorieItem} Categorie={CategorieItem} />
+				CategoryItem =>
+					<Category key={CategoryItem} Category={CategoryItem} />
 			)}
 		</ul>
 	);

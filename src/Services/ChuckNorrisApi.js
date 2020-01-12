@@ -14,9 +14,9 @@ api.getAllCategories = async function () {
 	}
 }
 
-api.getJokeByCategorie = async function ({Categorie}) {
+api.getJokeByCategory = async function ({Category}) {
 	try {
-		const result = await api.get(`/jokes/random?category=${Categorie}`);
+		const result = await api.get(`/jokes/random?category=${Category}`);
 		return result.data;
 	} catch (error) {
 		console.error(error);
