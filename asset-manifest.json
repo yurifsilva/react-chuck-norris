@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-chuck-norris/static/css/main.7c5ab37b.chunk.css",
-    "main.js": "/react-chuck-norris/static/js/main.26215072.chunk.js",
-    "main.js.map": "/react-chuck-norris/static/js/main.26215072.chunk.js.map",
+    "main.js": "/react-chuck-norris/static/js/main.c1b2d207.chunk.js",
+    "main.js.map": "/react-chuck-norris/static/js/main.c1b2d207.chunk.js.map",
     "runtime-main.js": "/react-chuck-norris/static/js/runtime-main.c0305596.js",
     "runtime-main.js.map": "/react-chuck-norris/static/js/runtime-main.c0305596.js.map",
     "static/js/2.9ab28fa8.chunk.js": "/react-chuck-norris/static/js/2.9ab28fa8.chunk.js",
     "static/js/2.9ab28fa8.chunk.js.map": "/react-chuck-norris/static/js/2.9ab28fa8.chunk.js.map",
     "index.html": "/react-chuck-norris/index.html",
-    "precache-manifest.8d64e5b706d054a9d0e74494874527af.js": "/react-chuck-norris/precache-manifest.8d64e5b706d054a9d0e74494874527af.js",
+    "precache-manifest.1b414ead21e75d9db7fd40f21deb5982.js": "/react-chuck-norris/precache-manifest.1b414ead21e75d9db7fd40f21deb5982.js",
     "service-worker.js": "/react-chuck-norris/service-worker.js",
     "static/css/main.7c5ab37b.chunk.css.map": "/react-chuck-norris/static/css/main.7c5ab37b.chunk.css.map",
     "static/js/2.9ab28fa8.chunk.js.LICENSE": "/react-chuck-norris/static/js/2.9ab28fa8.chunk.js.LICENSE",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.c0305596.js",
     "static/js/2.9ab28fa8.chunk.js",
     "static/css/main.7c5ab37b.chunk.css",
-    "static/js/main.26215072.chunk.js"
+    "static/js/main.c1b2d207.chunk.js"
   ]
 }
