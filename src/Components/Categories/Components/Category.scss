@@ -1,0 +1,14 @@
+.category {
+	display: flex;
+	box-shadow: 0 6px 10px -4px rgba(0,0,0,.15);
+	margin: 10px;
+	&:hover {
+		background-color: #f4f4f4;
+	}
+	a {
+		color: #252422;
+		text-decoration: none;
+		padding: 10px;
+		text-transform: capitalize;
+	}
+}

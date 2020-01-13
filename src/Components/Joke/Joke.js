@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import ChuckNorrisApi from '../../Services/ChuckNorrisApi';
+import JokeItem from './Components/JokeItem';
+import Loading from '../Loading/Loading';
+import './Joke.scss';
 
 export default function Joke({ Category }) {
 	const [Joke, setJoke] = useState({});
@@ -21,10 +24,10 @@ export default function Joke({ Category }) {
 		getJokeByCategory(Category);
 	}, []); //eslint-disable-line
 	
-  return (
-	  <div>
-		  {IsLoading ? <>Carregando ...</> : <button onClick={getJokeByCategory}>Carregar outra</button>}
-		  {Joke && Joke.id ? <>{Joke.value}</> : null}
+	return (
+		<div className="joke">
+			{IsLoading ? <Loading /> : null}
+			{Joke && Joke.id ? <JokeItem Joke={Joke} onClick={getJokeByCategory} /> : null}
 		</div>
 	);
 }
