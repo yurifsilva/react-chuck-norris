@@ -6,7 +6,7 @@ import React from 'react';
 
 export default function Routes() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename="/react-chuck-norris">
 			<Switch>
 				<Route exact path="/" component={HomePage} />
 				<Route path="/category/:Category" component={JokePage} /> } />
